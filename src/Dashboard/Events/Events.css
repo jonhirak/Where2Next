@@ -187,41 +187,6 @@
   font-weight: bold;
 }
 
-/* .carousel .item img {
-  left: -9999px;
-  right: -9999px;
-  margin: 0 auto;
-  max-width: none;
-  min-width: 100%;
-  position: absolute;
-} */
-
-/* .carousel-inner {
-  padding-top: 5%;
-  margin-right: 15%;
-  margin-left: 15%;
-}
-
-.carousel-caption {
-  margin-right: 15%;
-  margin-left: 15%;
-}
-
-.carousel.slide {
-  display: flex;
-  justify-content: center;
-}
-
-.carousel-control-next {
-  right: 7%;
-} */
-
-/* .carousel.slide {
-  width: auto;
-  height: 30%;
-  margin: auto;
-} */
-
 @media screen and (max-width: 600px) {
   .searchLocation {
     width: 80%;

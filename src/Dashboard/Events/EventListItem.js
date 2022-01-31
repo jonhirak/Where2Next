@@ -21,8 +21,6 @@ function EventListItem({ event, openModal }) {
     }
   };
 
-  // console.log(event);
-
   const date = new Date(event.dates.start.dateTime).toLocaleString([], {
     year: "numeric",
     month: "long",
