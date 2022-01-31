@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import "../App.css";
+import "../app.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./BookingModal.css";
 import { useNavigate, useLocation } from "react-router-dom";

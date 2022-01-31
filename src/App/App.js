@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../App.css";
+import "../app.css";
 import "../landingScreenBackground.jpeg";
 import "bootstrap/dist/css/bootstrap.min.css";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import LoginMenu from "./Login/LoginMenu.js";
-import "../App.css";
+import "../app.css";
 import UserContext from "../UserContext.js";
 import UserIcon from "./User/UserIcon.js";
 import ShareButtons from './SocialMedia/ShareButtons.js';
