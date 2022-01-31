@@ -1,9 +1,9 @@
 const axios = require("axios");
 const qs = require("query-string");
-const {
-  FLIGHT_API_CLIENT_ID,
-  FLIGHT_API_CLIENT_SECRET,
-} = require("../../config.js");
+// const {
+//   FLIGHT_API_CLIENT_ID,
+//   FLIGHT_API_CLIENT_SECRET,
+// } = require("../../config.js");
 
 module.exports = {
   getFlights: (req, res) => {
