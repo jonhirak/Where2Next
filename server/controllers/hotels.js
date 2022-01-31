@@ -1,7 +1,7 @@
 const axios = require("axios");
 const path = require("path");
 require("dotenv").config({ path: path.resolve(__dirname, "../../.env") });
-const { HOTEL_API_KEY, HOTEL_HOST } = require("../../config");
+// const { HOTEL_API_KEY, HOTEL_HOST } = require("../../config");
 const headers = {
   "x-rapidapi-host": HOTEL_HOST,
   "x-rapidapi-key": HOTEL_API_KEY,
