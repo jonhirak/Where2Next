@@ -18,12 +18,12 @@ module.exports = {
         res.status(200).send(events);
       })
       // .catch((e) => console.log(e));
-      .catch (e) => {
+      .catch ((e) => {
         res.status(500).send({
           'process.env.REACT_APP_EVENT_API_KEY': process.env.REACT_APP_EVENT_API_KEY,
           'REACT_APP_API_KEY': REACT_APP_API_KEY,
           'error message': e
         })
-      }
+      })
   },
 };
