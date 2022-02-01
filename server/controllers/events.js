@@ -10,6 +10,8 @@ module.exports = {
     const start = new Date(startDate).toISOString().slice(0, -5) + "Z";
     const end = new Date(endDate).toISOString().slice(0, -5) + "Z";
 
+    console.log('URL = ' + `https://app.ticketmaster.com/discovery/v2/events.json?latlong=${latitude},${longitude}&startDateTime=${start}&endDateTime=${end}&radius=30&unit=miles&apikey=${REACT_APP_EVENT_API_KEY}&size=100&sort=date,asc`);
+
     axios
       .get(
         `https://app.ticketmaster.com/discovery/v2/events.json?latlong=${latitude},${longitude}&startDateTime=${start}&endDateTime=${end}&radius=30&unit=miles&apikey=${REACT_APP_EVENT_API_KEY}&size=100&sort=date,asc`
