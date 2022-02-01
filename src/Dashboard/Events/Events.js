@@ -27,7 +27,7 @@ function Events() {
     console.log("startdate", startDate);
     axios
       .get(
-        `http://localhost:3000/nearbyEvents/${city}/${state}/${startDate}/${endDate}`
+        `http://localhost:12809/nearbyEvents/${city}/${state}/${startDate}/${endDate}`
       )
       .then(({ data }) => {
         if (isSubscribed) {
