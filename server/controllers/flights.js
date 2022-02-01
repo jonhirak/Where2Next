@@ -9,8 +9,8 @@ module.exports = {
   getFlights: (req, res) => {
     const data = qs.stringify({
       grant_type: "client_credentials",
-      client_id: process.env.FLIGHT_API_CLIENT_ID,
-      client_secret: process.env.FLIGHT_API_CLIENT_SECRET,
+      client_id: process.env.REACT_APP_FLIGHT_API_CLIENT_ID,
+      client_secret: process.env.REACT_APP_FLIGHT_API_CLIENT_SECRET,
     });
     const { arrivalCode } = req.params;
     console.log(arrivalCode);
