@@ -37,8 +37,8 @@ module.exports = {
       template: path.join(__dirname, "src", "index.html"),
     }),
     new webpack.DefinePlugin({
-      NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-      REACT_APP_EVENT_API_KEY: JSON.stringify(process.env.REACT_APP_EVENT_API_KEY)
+      'NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+      'REACT_APP_EVENT_API_KEY': JSON.stringify(process.env.REACT_APP_EVENT_API_KEY)
     })
   ],
 };
