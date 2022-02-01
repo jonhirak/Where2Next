@@ -38,7 +38,8 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-      'REACT_APP_EVENT_API_KEY': JSON.stringify(process.env.REACT_APP_EVENT_API_KEY)
+      'REACT_APP_EVENT_API_KEY': JSON.stringify(process.env.REACT_APP_EVENT_API_KEY),
+      'FLIGHT_API_CLIENT_SECRET': JSON.stringify(process.env.FLIGHT_API_CLIENT_SECRET),
     })
   ],
 };
