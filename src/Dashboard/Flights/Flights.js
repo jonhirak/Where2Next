@@ -26,7 +26,7 @@ function Flights({ test }) {
     setLoading(true);
     let isSubscribed = true;
     axios
-      .get(`http://localhost:3000/flights/${arrivalCode}`)
+      .get(`https://still-tundra-48887.herokuapp.com/flights/${arrivalCode}`)
       .then((flightsResponse) => {
         if (isSubscribed) {
           setLoading(false);

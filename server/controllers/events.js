@@ -1,6 +1,5 @@
 const axios = require("axios");
 // const { EVENT_API_KEY } = require("../../config.js");
-// require('dotenv').config();
 const zipcodes = require("zipcodes");
 module.exports = {
   getNearbyEvents: (req, res) => {

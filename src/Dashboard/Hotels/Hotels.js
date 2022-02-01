@@ -47,7 +47,7 @@ function Hotels() {
 
   const fetchNeighborhoods = (city) => {
     axios
-      .get(`http://localhost:3000/hotels/${encodedCity}`, {
+      .get(`https://still-tundra-48887.herokuapp.com/hotels/${encodedCity}`, {
         signal: abortFetch.signal,
       })
       .then((response) => {
@@ -63,7 +63,7 @@ function Hotels() {
   };
   const fetchHotels = (id) => {
     setLoading(true);
-    const url = `http://localhost:3000/hotels/${encodedCity}/${id}`;
+    const url = `https://still-tundra-48887.herokuapp.com/hotels/${encodedCity}/${id}`;
     axios
       .get(url)
       .then((response) => {
