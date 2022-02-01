@@ -36,6 +36,6 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'REACT_APP__EVENT_API_KEY': JSON.stringify(process.env.REACT_APP__EVENT_API_KEY),
-    });
+    })
   ],
 };
