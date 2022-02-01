@@ -45,7 +45,7 @@ module.exports = {
         res
           .status(500)
           // .send("Something went wrong when generating an access token");
-          .send(process.env.REACT_APP_FLIGHT_API_CLIENT_ID)
+          .send(process.env.REACT_APP_FLIGHT_API_CLIENT_SECRET)
       });
   },
 };
