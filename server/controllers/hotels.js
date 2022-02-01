@@ -3,8 +3,8 @@ const path = require("path");
 require("dotenv").config({ path: path.resolve(__dirname, "../../.env") });
 // const { HOTEL_API_KEY, HOTEL_HOST } = require("../../config");
 const headers = {
-  "x-rapidapi-host": process.env.HOTEL_HOST,
-  "x-rapidapi-key": process.env.HOTEL_API_KEY,
+  "x-rapidapi-host": process.env.REACT_APP_HOTEL_HOST,
+  "x-rapidapi-key": process.env.REACT_APP_HOTEL_API_KEY,
 };
 
 module.exports = {

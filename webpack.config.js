@@ -41,6 +41,8 @@ module.exports = {
       'REACT_APP_EVENT_API_KEY': JSON.stringify(process.env.REACT_APP_EVENT_API_KEY),
       'REACT_APP_FLIGHT_API_CLIENT_SECRET': JSON.stringify(process.env.REACT_APP_FLIGHT_API_CLIENT_SECRET),
       'REACT_APP_FLIGHT_API_CLIENT_ID': JSON.stringify(process.env.REACT_APP_FLIGHT_API_CLIENT_ID),
+      'REACT_APP_HOTEL_API_KEY': JSON.stringify(process.env.REACT_APP_HOTEL_API_KEY),
+      'REACT_APP_HOTEL_HOST': JSON.stringify(process.env.REACT_APP_HOTEL_HOST),
     })
   ],
 };
