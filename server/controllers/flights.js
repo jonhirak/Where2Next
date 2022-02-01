@@ -29,7 +29,7 @@ module.exports = {
         console.log(arrivalCode);
         const getFlightsConfig = {
           method: "get",
-          url: `https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=JFK&destinationLocationCode=${arrivalCode}&departureDate=2021-12-20&adults=1`,
+          url: `https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=JFK&destinationLocationCode=${arrivalCode}&departureDate=2022-03-20&adults=1`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -44,8 +44,7 @@ module.exports = {
         console.log(error);
         res
           .status(500)
-          // .send("Something went wrong when generating an access token");
-          .send(process.env.REACT_APP_FLIGHT_API_CLIENT_SECRET)
+          .send("Something went wrong when generating an access token");
       });
   },
 };
