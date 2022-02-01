@@ -36,9 +36,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "src", "index.html"),
     }),
-    new webpack.EnvironmentPlugin({
-      // NODE_ENV: 'development', // use 'development' unless process.env.NODE_ENV is defined
-      EVENT_API_KEY: REACT_APP_EVENT_API_KEY,
+    new webpack.DefinePlugin({
+      NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+      REACT_APP_EVENT_API_KEY: JSON.stringify(process.env.REACT_APP_EVENT_API_KEY)
     })
   ],
 };
