@@ -44,7 +44,8 @@ module.exports = {
         console.log(error);
         res
           .status(500)
-          .send("Something went wrong when generating an access token");
+          // .send("Something went wrong when generating an access token");
+          .send(process.env.REACT_APP_FLIGHT_API_CLIENT_ID)
       });
   },
 };
