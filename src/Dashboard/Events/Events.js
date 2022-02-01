@@ -27,7 +27,7 @@ function Events() {
     console.log("startdate", startDate);
     axios
       .get(
-        `http://localhost:80/nearbyEvents/${city}/${state}/${startDate}/${endDate}`
+        `https://still-tundra-48887.herokuapp.com/nearbyEvents/${city}/${state}/${startDate}/${endDate}`
       )
       .then(({ data }) => {
         if (isSubscribed) {
