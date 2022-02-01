@@ -1,6 +1,6 @@
 const axios = require("axios");
 // const { EVENT_API_KEY } = require("../../config.js");
-require('dotenv').config();
+// require('dotenv').config();
 const zipcodes = require("zipcodes");
 module.exports = {
   getNearbyEvents: (req, res) => {
@@ -11,19 +11,12 @@ module.exports = {
 
     axios
       .get(
-        `https://app.ticketmaster.com/discovery/v2/events.json?latlong=${latitude},${longitude}&startDateTime=${start}&endDateTime=${end}&radius=30&unit=miles&apikey=${process.env.REACT_APP_EVENT_API_KEY}&size=100&sort=date,asc`
+        `https://app.ticketmaster.com/discovery/v2/events.json?latlong=${latitude},${longitude}&startDateTime=${start}&endDateTime=${end}&radius=30&unit=miles&apikey=${REACT_APP_EVENT_API_KEY}&size=100&sort=date,asc`
       )
       .then((d) => {
         const events = d.data._embedded ? d.data._embedded.events : [];
         res.status(200).send(events);
       })
-      // .catch((e) => console.log(e));
-      .catch ((e) => {
-        res.status(500).send({
-          'process.env.REACT_APP_EVENT_API_KEY': process.env.REACT_APP_EVENT_API_KEY,
-          'REACT_APP_API_KEY': REACT_APP_API_KEY,
-          'error message': e
-        })
-      })
+      .catch((e) => console.log(e));
   },
 };
