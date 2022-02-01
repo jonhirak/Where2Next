@@ -157,7 +157,7 @@ function Events() {
 
     axios
       .get(
-        `http://localhost:3000/nearbyEvents/${city}/${state}/${today}/${tomorrow}`
+        `https://still-tundra-48887.herokuapp.com/nearbyEvents/${city}/${state}/${today}/${tomorrow}`
       )
       .then(({ data }) => {
         console.log(data);

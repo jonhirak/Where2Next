@@ -113,7 +113,7 @@ const helpers = {
       hotels: hotels
     };
 
-    return axios.post('http://localhost:3000/trips', body);
+    return axios.post('https://still-tundra-48887.herokuapp.com/trips', body);
   }
 
 
