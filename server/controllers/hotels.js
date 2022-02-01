@@ -1,7 +1,6 @@
 const axios = require("axios");
 const path = require("path");
 require("dotenv").config({ path: path.resolve(__dirname, "../../.env") });
-// const { HOTEL_API_KEY, HOTEL_HOST } = require("../../config");
 const headers = {
   "x-rapidapi-host": process.env.REACT_APP_HOTEL_HOST,
   "x-rapidapi-key": process.env.REACT_APP_HOTEL_API_KEY,
@@ -10,7 +9,6 @@ const headers = {
 module.exports = {
   fetchCityGroups: (req, res) => {
     const { city } = req.params;
-    // const { city } = req.query;
     const options = {
       method: "GET",
       url: "https://hotels4.p.rapidapi.com/locations/v2/search",

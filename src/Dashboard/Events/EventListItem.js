@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import TripContext from "../../../src/TripContext.js";
 import { useContext } from "react";
 import "./Events.css";
-// import "../dashboard.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons'
 

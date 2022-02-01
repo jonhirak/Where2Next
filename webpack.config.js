@@ -46,7 +46,3 @@ module.exports = {
     })
   ],
 };
-
-// new webpack.DefinePlugin({
-//   'EVENT_API_KEY': JSON.stringify(process.env.REACT_APP_EVENT_API_KEY),
-// }),
