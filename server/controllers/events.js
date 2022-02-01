@@ -1,8 +1,7 @@
 const axios = require("axios");
 // const { EVENT_API_KEY } = require("../../config.js");
-require('dotenv').config()
+require('dotenv').config();
 const zipcodes = require("zipcodes");
-// require('dotenv').config();
 module.exports = {
   getNearbyEvents: (req, res) => {
     const { city, state, startDate, endDate } = req.params;
@@ -10,7 +9,7 @@ module.exports = {
     const start = new Date(startDate).toISOString().slice(0, -5) + "Z";
     const end = new Date(endDate).toISOString().slice(0, -5) + "Z";
 
-    console.log('URL = ' + `https://app.ticketmaster.com/discovery/v2/events.json?latlong=${latitude},${longitude}&startDateTime=${start}&endDateTime=${end}&radius=30&unit=miles&apikey=${REACT_APP_EVENT_API_KEY}&size=100&sort=date,asc`);
+    console.log('URL = ' + `https://app.ticketmaster.com/discovery/v2/events.json?latlong=${latitude},${longitude}&startDateTime=${start}&endDateTime=${end}&radius=30&unit=miles&apikey=${EVENT_API_KEY}&size=100&sort=date,asc`);
 
     axios
       .get(

@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require('webpack');
+require('dotenv').config();
 
 module.exports = {
   entry: path.join(__dirname, "src", "index.js"),
@@ -36,7 +37,7 @@ module.exports = {
       template: path.join(__dirname, "src", "index.html"),
     }),
     new webpack.DefinePlugin({
-      'REACT_APP_EVENT_API_KEY': JSON.stringify(process.env.REACT_APP_EVENT_API_KEY),
+      'EVENT_API_KEY': JSON.stringify(process.env.EVENT_API_KEY),
     })
   ],
 };
