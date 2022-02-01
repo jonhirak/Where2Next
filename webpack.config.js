@@ -38,7 +38,7 @@ module.exports = {
     }),
     new webpack.EnvironmentPlugin({
       // NODE_ENV: 'development', // use 'development' unless process.env.NODE_ENV is defined
-      EVENT_API_KEY: process.env.REACT_APP_EVENT_API_KEY,
+      EVENT_API_KEY: REACT_APP_EVENT_API_KEY,
     })
   ],
 };
