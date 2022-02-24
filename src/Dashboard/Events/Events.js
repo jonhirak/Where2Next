@@ -5,10 +5,10 @@ import EventListItem from "./EventListItem";
 import BookingModal from "../../BookingModal/BookingModal";
 import FadeLoader from "react-spinners/FadeLoader";
 import "../dashboard.css";
-// import "./Events.css";
-import styles from "./Events.css";
+import "./Events.css";
+// import styles from "./Events.css";
 import moment from "moment";
-import Carousel from "react-bootstrap/Carousel";
+import Carousel from "react-bootstrap/Carousel"
 
 function Events() {
   const [events, setEvents] = useState([]);
@@ -199,7 +199,7 @@ function Events() {
           /> */}
           <>
             {currentEvents.length ? (
-              <Carousel style={{ width: "30%", marginTop: "3%" }}>
+              <Carousel style={{ width: "30%", marginBottom: "5%" }}>
                 {currentEvents.map((event) => {
                   return (
                     <Carousel.Item interval={3000}>
