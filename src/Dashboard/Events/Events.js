@@ -6,7 +6,6 @@ import BookingModal from "../../BookingModal/BookingModal";
 import FadeLoader from "react-spinners/FadeLoader";
 import "../dashboard.css";
 import "./Events.css";
-// import styles from "./Events.css";
 import moment from "moment";
 import Carousel from "react-bootstrap/Carousel"
 
@@ -48,7 +47,6 @@ function Events() {
   const [modalIsOpen, setIsOpen] = useState(false);
 
   const openModal = (quantity) => {
-    // setSelectedQuantity(quantity);
     selectedQuantity.current = quantity;
     setIsOpen(true);
   };
@@ -178,7 +176,6 @@ function Events() {
   };
 
   return (
-    // <div id="eventsPage">
     <div className="listContainer">
       {modalIsOpen && (
         <BookingModal
@@ -191,38 +188,30 @@ function Events() {
         <FadeLoader color="whitesmoke" loading={loading} />
       ) : (
         <div id="eventsList">
-          {/* <input
-            type="text"
-            name="locationInput"
-            className="searchLocation"
-            placeholder="Location"
-          /> */}
-          <>
-            {currentEvents.length ? (
-              <Carousel style={{ width: "30%", marginBottom: "5%" }}>
-                {currentEvents.map((event) => {
-                  return (
-                    <Carousel.Item interval={3000}>
-                      <img
-                        src={findLargestPhoto(event.images)}
-                        className="d-block mx-auto carouselImage"
-                        width="100%"
-                      />
-                      <Carousel.Caption>
-                        <h4>{event.name}</h4>
-                        <p>
-                          {event.dates.start.localDate} |{" "}
-                          {event.dates.start.localTime}
-                        </p>
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                  );
-                })}
-              </Carousel>
-            ) : (
-              <h1>No events happening today</h1>
-            )}
-          </>
+          {currentEvents.length ? (
+            <Carousel style={{ width: "30%", marginBottom: "5%" }}>
+              {currentEvents.map((event) => {
+                return (
+                  <Carousel.Item interval={3000}>
+                    <img
+                      src={findLargestPhoto(event.images)}
+                      className="d-block mx-auto carouselImage"
+                      width="100%"
+                    />
+                    <Carousel.Caption>
+                      <h4>{event.name}</h4>
+                      <p>
+                        {event.dates.start.localDate} |{" "}
+                        {event.dates.start.localTime}
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                );
+              })}
+            </Carousel>
+          ) : (
+            <h1>No events happening today</h1>
+          )}
           <div className="filterAndSortContainer">
             <input
               type="text"
@@ -250,7 +239,6 @@ function Events() {
         </div>
       )}
     </div>
-    // </div>
   );
 }
 

@@ -196,7 +196,7 @@
     flex-direction: column;
     align-items: center;
     margin: 3%;
-
+    margin-bottom: 5%;
   }
 
   .filterAndSortContainer > * {
